@@ -1,10 +1,19 @@
 import React from "react";
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import Mindy from './games/Mindy/Mindy';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello game</h1>
+      <Router>
+        <Routes>
+          <Route path="/mindy" exact element={<Mindy/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
