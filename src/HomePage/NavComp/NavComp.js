@@ -2,12 +2,18 @@ import './NavComp.css';
 import Button from 'react-bootstrap/Button';
 import { Container , Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import BrandImage from '../../images/gladiator-big.png';
+import Avatar from '../../images/gladiator-1.png';
+import Fab from '@mui/material/Fab';
 
 export default function NavComp(){
     return(
         <Navbar style={{backgroundColor:'#F4E185'}} className="nav-outer" expand="lg">
         <Container>
-            <Navbar.Brand href="#home" className="brand-name"><img className="brand-image" src={BrandImage}/>gladiator</Navbar.Brand>
+            <Navbar.Brand className="brand-name" onClick={()=>window.location="/mindy"}>
+                
+                    <img className="brand-image" src={BrandImage}/>gladiator
+            
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -23,7 +29,9 @@ export default function NavComp(){
             </Nav>
             <Nav>
                 <Nav.Link>
-                    
+                <Fab color="primary" aria-label="add">
+                    <img src={Avatar}/>
+                </Fab>
                 </Nav.Link>
             </Nav>
             </Navbar.Collapse>

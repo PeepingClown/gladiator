@@ -8,7 +8,14 @@
     color: #0F2C67;
     font-size: 2rem;
 }
+.brand-name:hover{
+    cursor: pointer;
+}
 
 /* .brand-image{
     width: 6%;
 } */
+
+.MuiFab-primary{
+    background-color: #F7F7F7 !important;
+}
