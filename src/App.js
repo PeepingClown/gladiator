@@ -4,6 +4,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import HomePage from './HomePage/HomePage';
 import Mindy from './games/Mindy/Mindy';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
+          <Route path="/" exact element={<HomePage/>}/>
           <Route path="/mindy" exact element={<Mindy/>}/>
         </Routes>
       </Router>
