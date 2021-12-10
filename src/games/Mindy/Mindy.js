@@ -1,5 +1,5 @@
 import './Mindy.css';
-
+import GameStartModal from './GameStartModal';
 
 export default function Mindy(){
     return(

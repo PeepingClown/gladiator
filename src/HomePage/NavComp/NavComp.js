@@ -1,11 +1,14 @@
+import {useState} from 'react';
 import './NavComp.css';
 import Button from 'react-bootstrap/Button';
 import { Container , Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import BrandImage from '../../images/gladiator-big.png';
 import Avatar from '../../images/gladiator-1.png';
 import Fab from '@mui/material/Fab';
+import Switch from '@mui/material/Switch';
 
 export default function NavComp(){
+    
     return(
         <Navbar style={{backgroundColor:'#F4E185'}} className="nav-outer" expand="lg">
         <Container>
@@ -29,10 +32,14 @@ export default function NavComp(){
             </Nav>
             <Nav>
                 <Nav.Link>
+                
+                </Nav.Link>
+                <Nav.Link>
                 <Fab color="primary" aria-label="add">
                     <img src={Avatar}/>
                 </Fab>
                 </Nav.Link>
+                
             </Nav>
             </Navbar.Collapse>
         </Container>
